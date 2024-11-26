@@ -16,6 +16,7 @@
   background-color: var(--color-gray-800);
   border-radius: 4px;
   overflow: hidden;
+  transition: all ease-in .2s;
 }
 
 .item a:hover {
