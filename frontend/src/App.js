@@ -8,6 +8,7 @@ import EventEdit from './pages/events/EventEdit';
 import EventsNavigation from './components/EventsNavigation';
 import Error from './pages/Error';
 import { action as manipulateEventAction } from './components/EventForm';
+import NewsletterPage, { action as newsletterAction } from './pages/newletter/Newsletter';
 
 // Challenge / Exercise
 
@@ -68,9 +69,14 @@ const router = createBrowserRouter(
               path: 'new', 
               element: <EventNew />,
               action: manipulateEventAction,
-            },
-          ],
+            }
+          ]
         },
+        {
+          path: 'newsletter',
+          element: <NewsletterPage />,
+          action: newsletterAction
+        }
       ]
     },
   ]
